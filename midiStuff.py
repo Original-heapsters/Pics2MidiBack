@@ -19,7 +19,7 @@ class midiStuff:
         myPoints = imgStuff.getPoints()
         self.points = myPoints
         print("POINTS FROM imageStuff")
-        return
+        return self.points
 
     # possibly use either optimize or fitToModel
     # optimize to make midi song sound good, may not be necessary
