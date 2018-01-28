@@ -1,0 +1,24 @@
+1. Receive image from front end
+2. Receive drawing from front end
+3. Analyze image and drawing as data
+    a. take average color, variance of colors
+    b. use open cv to convert to grayscale and convert to outline
+    //open cv canny edge detection
+    c. use those lines to map onto midi
+
+4. manipulate midi to sound normal, improving midi
+    (plotting points sound normal?)
+    investigate magenta?
+    use midi library?
+5. return midi back to front end
+
+upload in app.py
+midi processing class
+image operations - cv 2 operations, grayscale, average of colors
+
+creating midi - vishnubob
+
+x turn on and off
+y map to midi note, midi_g or c note, maybe 0-100 min and mix number
+    if there are 5 notes, divide by 5
+    get
