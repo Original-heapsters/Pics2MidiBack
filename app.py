@@ -3,6 +3,7 @@ import midiStuff
 from flask import Flask, request, url_for, redirect, render_template, abort, send_from_directory
 
 app = Flask(__name__)
+midStuff = midiStuff.midiStuff()
 
 @app.route('/')
 def index():
@@ -29,9 +30,8 @@ def upload():
 
 @app.route('/testMidiStuff')
 def testMidiStuff():
-    midiStuff = midiStuff()
-    output = midiStuff.plotPoints()
-    return json.dumps(output, indent=4)
+    output = midStuff.plotPoints()
+    return str(output)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4000, debug=True)
