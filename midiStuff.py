@@ -11,9 +11,9 @@ class midiStuff:
     # x value: turn on and off
     # y value: map to midi musical note (midi g or c note), maybe 0-100 min and max number
     # if there are 5 notes, divide by 5
-    def plotPoints(self):
+    def plotPoints(self, pathToImage):
         print("* POINTS *")
-        pathToImage = "shrek2.jpg"
+        # pathToImage = "shrek2.jpg"
         imgStuff = imageStuff.imageStuff(path=pathToImage)
 
         myPoints = imgStuff.getPoints()
