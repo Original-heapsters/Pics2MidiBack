@@ -15,7 +15,7 @@ MarkupSafe==1.0
 matplotlib==2.1.2
 mido==1.2.8
 nbformat==4.4.0
-numpy==1.14.0
+numpy==1.22.0
 opencv-python==3.4.0.12
 plotly==2.3.0
 pyparsing==2.2.0
